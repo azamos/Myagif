@@ -61,11 +61,56 @@
 .Circular{
   width: 120px;
   height: 120px;
-  border: 2px dotted blue;
+  border: 6px double blue;
   overflow: hidden;
   border-radius: 50%;
   background-size: contain;
 }
 .ProfilePic{
   position: relative;
+}
+
+.Task{
+  border: 1px solid gray;
+}
+
+.BottomBorder{
+  border-bottom: 1px solid gray;
+}
+
+.ProgressBarOutline{
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 25vw;
+  height: 1vw;
+  overflow: hidden;
+  display: inline-block;
+}
+.ProgressBarFilling{
+  background-color: greenyellow;
+  height: 1vw;
+}
+.CompletionPercent0{
+  width: 0%;
+}
+.CompletionPercent10{
+  width: 10%;
+}
+.CompletionPercent25{
+  width: 25%;
+}
+.CompletionPercent50{
+  width: 50%;
+}
+.CompletionPercent75{
+  width: 75%;
+}
+.CompletionPercent90{
+  width: 90%;
+}
+.CompletionPercent100{
+  width: 100%;
+}
+.Test1{
+  background-color: brown;
 }
