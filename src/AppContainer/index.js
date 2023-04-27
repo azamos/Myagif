@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import APP_PAGES from "./appConstants";
+import CONSTANTS from './appConstants';
 import PageBtn from './PageBtn';
 
 
@@ -7,16 +7,20 @@ import PageBtn from './PageBtn';
 //Rather, each page is its own component, in turn will probably be constructed from smaller components.
 
 const AppContainer = () => {
+    const [APP_PAGES,PAGE_BTN_ORDER] = CONSTANTS;
     const [page,setPage] = useState(APP_PAGES.HOME_PAGE);
     return (
         <div id="PAGE_CHOISE" className="FlexboxContainer">
             {Object.keys(APP_PAGES)
             .map(pName=>
-                <PageBtn key ={pName}
-                 name={pName}
-                clickEventListener={
-                    e=>eventListenerSelector.bind(e,pName, setPage)}/>
-                )}
+                <div key ={pName}>
+                    <PageBtn  
+                    name={pName}
+                    order = {`${PAGE_BTN_ORDER[pName]}`}
+                    clickEventListener={
+                     e=>eventListenerSelector.bind(e,pName, setPage)}/>
+                </div>
+                 )}
         </div>
     );
 };

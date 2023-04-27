@@ -11,11 +11,10 @@
   flex-wrap: wrap;
   width: 50vw;
   justify-content: center;
+  gap: 10px;
 }
 
 .PageBtn{
-  background-color: whitesmoke;
-  border-bottom: double 10px black;
   max-width: 20vw;
   min-width:20vw;
   max-height: 20vh;
@@ -23,4 +22,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.TopLeft{
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.BottomLeft{
+  border-top: 1px solid gray;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.TopRight{
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.BottomRight{
+  border-top: 1px solid gray;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  box-shadow: 5px 5px 5px 5px gray;
 }

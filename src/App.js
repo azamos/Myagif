@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <AppContainer/>
+      <img src={logo}/>
     </div>
   );
 }
