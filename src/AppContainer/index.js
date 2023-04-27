@@ -15,7 +15,7 @@ const AppContainer = () => {
             .map(pName=>
                 <div key ={pName}>
                     <PageBtn  
-                    name={pName}
+                    name={pName.split('_').join(' ')}
                     order = {`${PAGE_BTN_ORDER[pName]}`}
                     clickEventListener={
                      e=>eventListenerSelector.bind(e,pName, setPage)}/>
