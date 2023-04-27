@@ -1,12 +1,11 @@
 import logo from './logo.png';
 import './App.css';
+import AppContainer from './AppContainer';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <img src={logo} alt="logo" />
-      </header>
+      <AppContainer/>
     </div>
   );
 }
