@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.FlexboxContainer{
+  display: flexbox;
+  flex-direction: row;
+}
