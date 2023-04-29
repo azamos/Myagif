@@ -7,8 +7,6 @@ import TasksPage from './TasksPage';
 function App() {
   return (
     <div className="App">
-      <ProfileBtn/>
-      <p>azamoszohar@gmail.com</p>
       <AppContainer/>
       <TasksPage/>
     </div>
