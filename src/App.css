@@ -19,7 +19,7 @@
 }
 
 .TasksPage{
-  background-image: url('./semibg.png');
+  background-image: url('./tasks.png');
   background-size: contain;
   background-repeat:no-repeat;
   background-position: center;
@@ -85,7 +85,7 @@
   box-shadow: 5px 5px 5px 5px gray;
 }
 .PageBtn:hover{
-  background-color: rgb(183, 179, 179);
+  background-color: rgb(212, 211, 211);
 }
 
 .Circular{
