@@ -1,4 +1,4 @@
-import CONSTANTS from "./AppContainer/appConstants";
+import CONSTANTS from "./Menu/appConstants";
 class TaskData{
     constructor(dueDate,urgency,severity,completionPercent,className,skill,difficulty,details,id){
             this.dueDate = dueDate;

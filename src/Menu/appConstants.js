@@ -1,6 +1,6 @@
 const HOME_PAGE = "HOME_PAGE";
 const SCHED_PAGE = "SCHED_PAGE";
-const TASK_PAGE = "TASKS_PAGE";
+const TASK_PAGE = "TASK_PAGE";
 const STATS_PAGE = "STATS_PAGE";
 const SOCIAL_PAGE = "SOCIAL_PAGE";
 
@@ -29,6 +29,6 @@ const URGENCIES = {"LOW":1,"MED":2,"HGH":3};//Low = small visual glitch, functio
 const SEVERITY = {"NOT-CRITICAL":0,"CRITICAL":1};//How bad the specifc problem is: is the item completely broken, or just slightly glitched?
 const DIFFICULTIES = {"EASY":1,"MEDIUM":2,"HARD":3};//FOR XP purpose
 
-const CONSTANTS = {APP_PAGES,PAGE_BTN_ORDER,COMPLETION_STATUSES,URGENCIES,SEVERITY,DIFFICULTIES};
+const CONSTANTS = {APP_PAGES,PAGE_BTN_ORDER,COMPLETION_STATUSES,URGENCIES,SEVERITY,DIFFICULTIES,HOME_PAGE};
 
 export default CONSTANTS;
