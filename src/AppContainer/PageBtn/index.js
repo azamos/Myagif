@@ -8,6 +8,7 @@ const OrderToClass = {
 };
 
 const PageBtn = props => 
-    <div id = {props.name} className={`PageBtn ${OrderToClass[props.order]}`} onClick={props.clickEventListener}><h3>{props.name}</h3></div>;
+    <div id = {props.name} className={`PageBtn ${OrderToClass[props.order]} ${props.name == "TASK PAGE"? "TasksPage":""} ${props.name == "SCHED PAGE"?"SchedPage":""} ${props.name == "STATS PAGE"?"StatsPage":""} ${props.name=="SOCIAL PAGE"? "SocialPage":""}`}
+     onClick={props.clickEventListener}><h1>{props.name}</h1></div>;
 
 export default PageBtn;

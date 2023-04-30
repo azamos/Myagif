@@ -7,7 +7,7 @@ import PageBtn from './PageBtn';
 //Rather, each page is its own component, in turn will probably be constructed from smaller components.
 
 const AppContainer = () => {
-    const [APP_PAGES,PAGE_BTN_ORDER] = CONSTANTS;
+    const {APP_PAGES,PAGE_BTN_ORDER} = CONSTANTS;
     const [page,setPage] = useState(APP_PAGES.HOME_PAGE);
     return (
         <div id="PAGE_CHOISE" className="FlexboxContainer">

@@ -24,8 +24,11 @@ const COMPLETION_STATUSES = {
     "Nearly Done":90,
     "Finished":100
 };
+const URGENCIES = {"LOW":1,"MED":2,"HGH":3};//Low = small visual glitch, functionality intact.
+//Medium = some functionality is not working. High = big problem
+const SEVERITY = {"NOT-CRITICAL":0,"CRITICAL":1};//How bad the specifc problem is: is the item completely broken, or just slightly glitched?
+const DIFFICULTIES = {"EASY":1,"MEDIUM":2,"HARD":3};//FOR XP purpose
 
-
-const CONSTANTS = [APP_PAGES,PAGE_BTN_ORDER,COMPLETION_STATUSES];
+const CONSTANTS = {APP_PAGES,PAGE_BTN_ORDER,COMPLETION_STATUSES,URGENCIES,SEVERITY,DIFFICULTIES};
 
 export default CONSTANTS;

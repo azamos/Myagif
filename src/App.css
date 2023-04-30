@@ -18,6 +18,32 @@
   padding-bottom: 5vh;
 }
 
+.TasksPage{
+  background-image: url('./semibg.png');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.SchedPage{
+  background-image: url('./sched.png');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.StatsPage{
+  background-image: url('./stats.png');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.SocialPage{
+  background-image: url('./social.png');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
 .PageBtn{
   max-width: 20vw;
   min-width:20vw;
@@ -26,7 +52,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 145, 0);
+}
+@supports (-webkit-text-stroke: 1px black) {
+  h1 {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+  }
 }
 
 .TopLeft{
@@ -112,11 +143,15 @@
 }
 .CompletionPercent100{
   width: 100%;
+  background-color: greenyellow;
 }
 
 .Critical{
   background-color: red;
   color:white;
+}
+.NonCritical{
+  background-color: yellow;
 }
 .High{
   background-color: orange;
@@ -126,4 +161,8 @@
 }
 .Low{
   background-color: lightgreen;
+}
+
+.AllClear{
+  background-color: rgb(179, 179, 179);
 }
