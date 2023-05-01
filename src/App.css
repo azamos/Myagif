@@ -165,3 +165,15 @@
 .AllClear{
   background-color: rgb(179, 179, 179);
 }
+
+.TableSquare{
+  box-shadow: 1px 1px 1px 1px rgb(197, 197, 197);
+  min-width: 10vw;
+  min-height: 10vh;
+}
+@supports (-webkit-text-stroke: 1px black) {
+  h2 {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+  }
+}
