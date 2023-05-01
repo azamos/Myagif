@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import CONSTANTS from './appConstants';
 import PageBtn from './PageBtn';
 import TasksPage from "../TasksPage";
+import Week from "../Sched/Week";
 
 
 //Need to remember: Each square is not the page itself, mereley a generic button that sends to each page.
@@ -9,7 +10,7 @@ import TasksPage from "../TasksPage";
 
 const Menu = props => {
     const {APP_PAGES,PAGE_BTN_ORDER,HOME_PAGE} = CONSTANTS;
-    const [activeComponent,setActiveComponent] = useState(HOME_PAGE);
+    const {activeComponent,setActiveComponent} = props;
     return (
         <div>
             <div id="PAGE_CHOISE" className="FlexboxContainer">
@@ -25,8 +26,7 @@ const Menu = props => {
                         setActiveComponent(pName)}}/>
                 </div>
                  )}
-            </div>
-            {activeComponent == CONSTANTS.APP_PAGES.TASK_PAGE && <TasksPage/>}
+            </div>}
         </div>
     );
 };
